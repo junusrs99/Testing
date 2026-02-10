@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="creditGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="120" cy="120" r="90" fill="none" stroke="#1E293B" stroke-width="10"/>
+  <path d="M120 30 A90 90 0 0 1 200 120"
+        fill="none" stroke="url(#creditGrad)" stroke-width="10"/>
+
+  <circle cx="120" cy="120" r="8" fill="#22D3EE"/>
+  <line x1="120" y1="120" x2="180" y2="90"
+        stroke="#22D3EE" stroke-width="4"/>
+
+  <text x="120" y="200" text-anchor="middle"
+        fill="#94A3B8" font-size="14">AI Credit Score</text>
+</svg>

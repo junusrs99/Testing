@@ -1,0 +1,13 @@
+{
+    "name": "AI-Powered Fintech",
+    "short_name": "AI-Powered Fintech",
+    "start_url": "/",
+    "display": "standalone",
+    "description": "AI-Powered Fintech",
+    "lang": "english",
+    "dir": "ltr",
+    "theme_color": "#006eff",
+    "background_color": "#ffffff",
+    "orientation": "any",
+    "prefer_related_applications": false
+}

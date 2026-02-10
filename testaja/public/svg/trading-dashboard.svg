@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="800"
+  viewBox="0 0 1200 800"
+>
+
+  <!-- ===================== -->
+  <!-- DEFINITIONS -->
+  <!-- ===================== -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#010316"/>
+      <stop offset="100%" stop-color="#02051A"/>
+    </linearGradient>
+
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#F472B6"/>
+    </linearGradient>
+
+    <filter id="glowFilter">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ===================== -->
+  <!-- BACKGROUND -->
+  <!-- ===================== -->
+  <rect width="1200" height="800" fill="url(#bgGrad)"/>
+
+  <!-- ===================== -->
+  <!-- HEADER -->
+  <!-- ===================== -->
+  <text x="40" y="50"
+        font-family="Arial, sans-serif"
+        font-size="28"
+        fill="#E5E7EB">
+    AI Trading Dashboard
+  </text>
+  <text x="40" y="80"
+        font-family="Arial, sans-serif"
+        font-size="14"
+        fill="#94A3B8">
+    Neural Market Prediction &amp; Portfolio Insights
+  </text>
+
+  <!-- ===================== -->
+  <!-- GRID -->
+  <!-- ===================== -->
+  <g stroke="#0F172A" stroke-width="1">
+    <line x1="100" y1="140" x2="1100" y2="140"/>
+    <line x1="100" y1="240" x2="1100" y2="240"/>
+    <line x1="100" y1="340" x2="1100" y2="340"/>
+    <line x1="100" y1="440" x2="1100" y2="440"/>
+    <line x1="100" y1="540" x2="1100" y2="540"/>
+    <line x1="100" y1="640" x2="1100" y2="640"/>
+
+    <line x1="100" y1="140" x2="100" y2="640"/>
+    <line x1="200" y1="140" x2="200" y2="640"/>
+    <line x1="300" y1="140" x2="300" y2="640"/>
+    <line x1="400" y1="140" x2="400" y2="640"/>
+    <line x1="500" y1="140" x2="500" y2="640"/>
+    <line x1="600" y1="140" x2="600" y2="640"/>
+    <line x1="700" y1="140" x2="700" y2="640"/>
+    <line x1="800" y1="140" x2="800" y2="640"/>
+    <line x1="900" y1="140" x2="900" y2="640"/>
+    <line x1="1000" y1="140" x2="1000" y2="640"/>
+    <line x1="1100" y1="140" x2="1100" y2="640"/>
+  </g>
+
+  <!-- ===================== -->
+  <!-- NEURAL MARKET LINE -->
+  <!-- ===================== -->
+  <g fill="none" stroke="url(#lineGrad)" stroke-width="2" filter="url(#glowFilter)">
+    <path d="M100 600 C150 580, 200 540, 250 560 S350 520, 400 540 S500 500, 550 520 S650 480, 700 500 S800 460, 850 480 S950 440, 1000 460 S1100 420, 1150 440"/>
+  </g>
+
+  <!-- ===================== -->
+  <!-- CANDLESTICKS -->
+  <!-- ===================== -->
+  <g stroke-width="4">
+    <line x1="150" y1="580" x2="150" y2="560" stroke="#22D3EE"/>
+    <line x1="200" y1="540" x2="200" y2="520" stroke="#EF4444"/>
+    <line x1="250" y1="560" x2="250" y2="540" stroke="#22D3EE"/>
+    <line x1="300" y1="520" x2="300" y2="500" stroke="#EF4444"/>
+    <line x1="350" y1="520" x2="350" y2="500" stroke="#22D3EE"/>
+    <line x1="400" y1="540" x2="400" y2="520" stroke="#EF4444"/>
+    <line x1="450" y1="500" x2="450" y2="480" stroke="#22D3EE"/>
+    <line x1="500" y1="520" x2="500" y2="500" stroke="#EF4444"/>
+    <line x1="550" y1="520" x2="550" y2="500" stroke="#22D3EE"/>
+    <line x1="600" y1="500" x2="600" y2="480" stroke="#EF4444"/>
+    <line x1="650" y1="480" x2="650" y2="460" stroke="#22D3EE"/>
+    <line x1="700" y1="500" x2="700" y2="480" stroke="#EF4444"/>
+    <line x1="750" y1="460" x2="750" y2="440" stroke="#22D3EE"/>
+    <line x1="800" y1="480" x2="800" y2="460" stroke="#EF4444"/>
+    <line x1="850" y1="480" x2="850" y2="460" stroke="#22D3EE"/>
+    <line x1="900" y1="460" x2="900" y2="440" stroke="#EF4444"/>
+    <line x1="950" y1="440" x2="950" y2="420" stroke="#22D3EE"/>
+    <line x1="1000" y1="460" x2="1000" y2="440" stroke="#EF4444"/>
+    <line x1="1050" y1="440" x2="1050" y2="420" stroke="#22D3EE"/>
+    <line x1="1100" y1="420" x2="1100" y2="400" stroke="#EF4444"/>
+  </g>
+
+  <!-- ===================== -->
+  <!-- PORTFOLIO GAUGE -->
+  <!-- ===================== -->
+  <g transform="translate(950 350)">
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#1E293B" stroke-width="14"/>
+    <path d="M -120 0 A 120 120 0 0 1 60 -104" fill="none" stroke="url(#lineGrad)" stroke-width="14" stroke-linecap="round"/>
+    <text x="0" y="10" text-anchor="middle" font-size="42" fill="#E5E7EB">76</text>
+    <text x="0" y="40" text-anchor="middle" font-size="14" fill="#94A3B8">Portfolio Score</text>
+  </g>
+
+  <!-- ===================== -->
+  <!-- FOOTER -->
+  <!-- ===================== -->
+  <text x="40" y="780"
+        font-size="12"
+        fill="#64748B">
+    © AI FinTech Systems · Trading Intelligence
+  </text>
+
+</svg>

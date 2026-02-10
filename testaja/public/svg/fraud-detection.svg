@@ -1,0 +1,11 @@
+<svg width="220" height="260" viewBox="0 0 220 260" xmlns="http://www.w3.org/2000/svg">
+  <path d="M110 10l90 40v70c0 60-40 100-90 130C60 220 20 180 20 120V50z"
+        fill="#1E40AF" opacity="0.15"/>
+
+  <path d="M110 10l90 40v70c0 60-40 100-90 130C60 220 20 180 20 120V50z"
+        fill="none" stroke="#2563EB" stroke-width="4"/>
+
+  <circle cx="110" cy="120" r="30" fill="#2563EB"/>
+  <path d="M95 120l10 10 20-20"
+        fill="none" stroke="#FFFFFF" stroke-width="4"/>
+</svg>

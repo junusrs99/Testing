@@ -1,0 +1,16 @@
+<svg width="300" height="180" viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="180" rx="16" fill="#020617"/>
+
+  <polyline
+    points="20,140 60,120 100,130 140,90 180,100 220,60 260,80"
+    fill="none"
+    stroke="#22D3EE"
+    stroke-width="3"/>
+
+  <circle cx="220" cy="60" r="5" fill="#22D3EE"/>
+  <circle cx="140" cy="90" r="5" fill="#22D3EE"/>
+
+  <text x="20" y="30" fill="#94A3B8" font-size="14">
+    AI Market Prediction
+  </text>
+</svg>

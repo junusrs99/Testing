@@ -1,0 +1,8 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="30" fill="#22D3EE">
+    <animate attributeName="r"
+             values="30;40;30"
+             dur="1.5s"
+             repeatCount="indefinite"/>
+  </circle>
+</svg>

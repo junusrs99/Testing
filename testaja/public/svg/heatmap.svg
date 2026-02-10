@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="800"
+  viewBox="0 0 1200 800"
+>
+
+  <!-- ===================== -->
+  <!-- DEFINITIONS -->
+  <!-- ===================== -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+
+    <linearGradient id="heatLowHigh" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ===================== -->
+  <!-- BACKGROUND -->
+  <!-- ===================== -->
+  <rect width="1200" height="800" fill="url(#bg)"/>
+
+  <!-- ===================== -->
+  <!-- HEADER -->
+  <!-- ===================== -->
+  <text x="40" y="55"
+        font-size="26"
+        fill="#E5E7EB"
+        font-family="Arial, sans-serif">
+    AI Payments Fraud Heatmap
+  </text>
+
+  <text x="40" y="85"
+        font-size="14"
+        fill="#94A3B8"
+        font-family="Arial, sans-serif">
+    Real-time Transaction Intelligence
+  </text>
+
+  <!-- ===================== -->
+  <!-- MAP GRID -->
+  <!-- ===================== -->
+  <g stroke="#0F172A" stroke-width="1">
+    <line x1="100" y1="140" x2="1100" y2="140"/>
+    <line x1="100" y1="240" x2="1100" y2="240"/>
+    <line x1="100" y1="340" x2="1100" y2="340"/>
+    <line x1="100" y1="440" x2="1100" y2="440"/>
+    <line x1="100" y1="540" x2="1100" y2="540"/>
+    <line x1="100" y1="640" x2="1100" y2="640"/>
+
+    <line x1="100" y1="140" x2="100" y2="640"/>
+    <line x1="260" y1="140" x2="260" y2="640"/>
+    <line x1="420" y1="140" x2="420" y2="640"/>
+    <line x1="580" y1="140" x2="580" y2="640"/>
+    <line x1="740" y1="140" x2="740" y2="640"/>
+    <line x1="900" y1="140" x2="900" y2="640"/>
+    <line x1="1100" y1="140" x2="1100" y2="640"/>
+  </g>
+
+  <!-- ===================== -->
+  <!-- HEATMAP CELLS -->
+  <!-- ===================== -->
+  <g filter="url(#softGlow)">
+    <rect x="100" y="140" width="160" height="100" fill="#22D3EE" opacity="0.25"/>
+    <rect x="260" y="140" width="160" height="100" fill="#FACC15" opacity="0.35"/>
+    <rect x="420" y="140" width="160" height="100" fill="#EF4444" opacity="0.45"/>
+    <rect x="580" y="140" width="160" height="100" fill="#22D3EE" opacity="0.20"/>
+    <rect x="740" y="140" width="160" height="100" fill="#FACC15" opacity="0.30"/>
+    <rect x="900" y="140" width="200" height="100" fill="#22D3EE" opacity="0.25"/>
+
+    <rect x="100" y="240" width="160" height="100" fill="#FACC15" opacity="0.40"/>
+    <rect x="260" y="240" width="160" height="100" fill="#EF4444" opacity="0.55"/>
+    <rect x="420" y="240" width="160" height="100" fill="#EF4444" opacity="0.65"/>
+    <rect x="580" y="240" width="160" height="100" fill="#FACC15" opacity="0.35"/>
+    <rect x="740" y="240" width="160" height="100" fill="#22D3EE" opacity="0.25"/>
+    <rect x="900" y="240" width="200" height="100" fill="#FACC15" opacity="0.30"/>
+
+    <rect x="100" y="340" width="160" height="100" fill="#22D3EE" opacity="0.30"/>
+    <rect x="260" y="340" width="160" height="100" fill="#FACC15" opacity="0.45"/>
+    <rect x="420" y="340" width="160" height="100" fill="#EF4444" opacity="0.70"/>
+    <rect x="580" y="340" width="160" height="100" fill="#EF4444" opacity="0.60"/>
+    <rect x="740" y="340" width="160" height="100" fill="#FACC15" opacity="0.40"/>
+    <rect x="900" y="340" width="200" height="100" fill="#22D3EE" opacity="0.25"/>
+  </g>
+
+  <!-- ===================== -->
+  <!-- TRANSACTION FLOW LINES -->
+  <!-- ===================== -->
+  <g stroke="#6366F1" stroke-width="2" opacity="0.6" fill="none">
+    <path d="M180 690 C 300 620, 420 600, 540 580"/>
+    <path d="M540 580 C 660 560, 780 540, 900 500"/>
+    <path d="M260 720 C 420 680, 580 650, 740 610"/>
+  </g>
+
+  <!-- ===================== -->
+  <!-- LEGEND -->
+  <!-- ===================== -->
+  <g transform="translate(40 680)">
+    <rect x="0" y="0" width="240" height="80" rx="12" fill="#020617" stroke="#1E293B"/>
+
+    <text x="16" y="24" font-size="14" fill="#E5E7EB">
+      Fraud Risk Level
+    </text>
+
+    <rect x="16" y="36" width="200" height="10" fill="url(#heatLowHigh)"/>
+
+    <text x="16" y="64" font-size="12" fill="#94A3B8">
+      Low
+    </text>
+    <text x="200" y="64" font-size="12" fill="#94A3B8" text-anchor="end">
+      High
+    </text>
+  </g>
+
+  <!-- ===================== -->
+  <!-- FOOTER -->
+  <!-- ===================== -->
+  <text x="40" y="780"
+        font-size="12"
+        fill="#64748B">
+    © AI FinTech Systems · Payments Intelligence
+  </text>
+
+</svg>
